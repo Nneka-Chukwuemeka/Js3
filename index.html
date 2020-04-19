@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UFT-8">
+        <title> Function </title>   
+        <script>
+        // declare a function with one parameter
+            function quote(parameter) {
+                let paraData = [];
+                for (let i=1; i<parameter; i++){
+                    
+                    // declare conditions for numbers divisible by 2, 3, 5
+                     if ( [i] % 2 == 0 && [i] % 3 == 0 && [i] % 5 == 0){
+                      paraData.push('yu-gi-oh');
+                    }
+                    else if (
+                    [i] % 2 ==0 && [i] % 3 == 0) {
+                      paraData.push('yu-gi');  
+                    }
+                    else if (
+                    [i] % 2 == 0 && [i] % 5 == 0){
+                     paraData.push('yu-oh');
+                    }
+                    else if (
+                    [i] % 3 == 0 && [i] % 5  == 0){
+                      paraData.push('gi-oh');
+                    }
+                    
+                    else if (
+                    [i] % 5 == 0) {
+                      paraData.push('oh');
+                    }  else if (
+                    [i] % 3 == 0){
+                       paraData.push('gi');
+                    }
+
+                    else if (
+                    [i] % 2 == 0){
+                       paraData.push('yu'); 
+                   
+                    }
+                    else {
+                       paraData.push(i);
+                    }
+                }
+                console.log(paraData);
+                return paraData;
+            }
+        
+                    quote(100);
+                    quote(30);
+                    quote(10);
+                                
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
